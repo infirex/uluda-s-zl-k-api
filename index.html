@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title>Uludağ Sözlük API</title>
+
+    <style>
+        .borderzero {
+            border: 0 none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container searchContainer mt-2">
+        <div class="search card card-body border-success">
+            <h3>Uludağ sözlükteki bir başlığı Arayın</h3>
+            <p class="lead">
+                Bir başlık adı girin ve başlık entrylerine ulaşın!
+            </p>
+            <form id="sozluk-form">
+                <input type="text" name="sozlukname" id="sozlukname" class="form-control border-success"
+                    placeholder="Başlık adı">
+                <br>
+                <button type="submit" class="btn btn-outline-success">Ara</button>
+            </form>
+            <br><br>
+            <div id="infos" class="card d-none mb-2" style="width: 40rem;">
+                <!--<div class="card-body">
+                    <h5 class="font-weight-bold mb-3">Panel title</h5>
+                    <p class="mb-0">Some quick example text to build on the panel title and make up the bulk of the
+                        panel's content.</p>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Cras justo odio</li>
+                    <li class="list-group-item">Dapibus ac facilisis in</li>
+                    <li class="list-group-item">Vestibulum at eros</li>
+                </ul>
+                <div class="card-body">
+                    <a href="#!" class="card-link">Card link</a>
+                    <a href="#!" class="card-link">Another link</a>
+                </div>
+                -->
+            </div>
+
+        </div>
+        <br>
+
+        <div id="profile">
+
+            <!-- <div class="card card-body mb-3">
+                    <div class="row">
+                      <div class="col-md-4">
+                        <a href="" target = "_blank">
+                         <img class="img-fluid mb-2" src="https://upload.wikimedia.org/wikipedia/tr/a/a0/Cem_Karaca.jpg"> </a>
+                         <hr>
+                         <div id="fullName"><strong> Mustafa Murat Coşkun</strong></div>
+                         <hr>
+                         <div id="bio">asdasdasdsad</div>
+                        </div>
+                      <div class="col-md-8">
+                            <button class="btn btn-secondary">
+                                  Takipçi  <span class="badge badge-light"></span>
+                            </button>
+                            <button class="btn btn-info">
+                                 Takip Edilen  <span class="badge badge-light"></span>
+                              </button>
+                            <button class="btn btn-danger">
+                                Repolar  <span class="badge badge-light"></span>
+                            </button>
+                            <hr>
+                            <li class="list-group">
+                                <li class="list-group-item borderzero">
+                                    <img src="images/company.png" width="30px"> <span id="company">Naber</span>
+                                    
+                                </li>
+                                <li class="list-group-item borderzero">
+                                    <img src="images/location.png" width="30px"> <span id = "location">sadasdsad</a>
+                                    
+                                </li>
+                                <li class="list-group-item borderzero">
+                                    <img src="images/mail.png" width="30px"> <span id="company">Naber</span>
+                                    
+                                </li>
+                                
+                            </div>
+                               
+                            
+                      </div>
+                </div> -->
+        </div>
+
+
+
+        <h3 class="page-heading mb-3 text-success">Entryler</h3>
+        <div id="entries">
+
+            <!-- 
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Cras justo odio</li>                    
+                </ul> 
+            -->
+
+        </div>
+
+        <h3 class="page-heading mb-3 text-danger">Son Aramalar</h3>
+
+        <div id="lastSearch" style="margin-bottom: 100px; width: 20rem;">
+            <div class="list-group">
+                <!--<a href="#" class="list-group-item list-group-item-action"></a>-->
+            </div>
+            <hr>
+            <button id="clear-last-titles" class="btn btn-outline-danger">Son Arananları Temizle</button>
+
+        </div>
+
+    </div>
+
+
+    </div>
+
+
+
+    </div>
+
+
+    <script src="sozluk.js"></script>
+    <script src="storage.js"></script>
+    <script src="ui.js"></script>
+    <script src="app.js"></script>
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
